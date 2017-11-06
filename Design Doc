@@ -1,0 +1,37 @@
+Parking Lot
+-> Spot placeVehicle(Vehicle)
+-> removeVehicle(Vehicle)
+
+
+Spot:
+    -> store int
+    -> id String
+    -> Size Enum
+
+Size
+ SMALL, MEDIUM, LARGE, EXTRALARGE
+
+Vehicle: ( abstract )
+   -> licencePlateNo String
+
+Car extends Vehicle
+Moter extends Vehicle
+Truck extends Vehicle
+Bus extends Vehicle
+
+
+
+swipeCreditCard(CreditCard card);
+  -> if valid credit card
+      -> display select your order
+      -> placeOrder(Spot s):
+
+
+
+ void placeOrder(Spot s){
+    once successfull
+    deduct price of that order from cc.
+ }
+
+
+
